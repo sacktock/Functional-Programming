@@ -25,6 +25,7 @@ shuffle [] = []
 shuffle xs = (tail xs) ++ (take 1 xs)
 
 -- | bubbble sort
+f :: Ord a => [a] -> [a]
 f [] = []
 f (x:xs) = f ys ++ [x] ++ f zs
  where
