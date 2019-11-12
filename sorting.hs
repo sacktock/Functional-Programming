@@ -8,7 +8,7 @@ compress = foldl (\xs x -> if x `elem` xs then xs else xs ++[x]) []
 pyths :: Int -> [(Int,Int,Int)]
 pyths x = [(a, b, c) | a <- [1..x], b <- [1..x], c <- [1..x], a^2+ b^2 == c^2] 
 
--- | does the same but guves the unique pythagorian triples a is less than b
+-- | does the same but gives the unique pythagorian triples a is less than b
 pyths2 :: Int -> [(Int,Int,Int)]
 pyths2 x = [(a, b, c) | a <- [1..x], b <- [1..x], c <- [1..x], a < b, a^2+ b^2 == c^2] 
 
